@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bijlipay Onboarding Decision Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card" id="app" aria-live="polite">
+      <header class="card-header">
+        <p class="eyebrow">Bijlipay Sales Assistant</p>
+        <h1>Onboarding Model Decision Tree</h1>
+      </header>
+
+      <div class="progress-wrap">
+        <div class="step-text" id="stepIndicator">Step 1 of 5</div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <section class="content" id="content"></section>
+
+      <footer class="card-footer">
+        <button id="restartBtn" class="ghost-btn" type="button">Restart</button>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
